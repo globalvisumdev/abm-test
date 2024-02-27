@@ -1,0 +1,44 @@
+{
+  "name": "app-server",
+  "private": true,
+  "version": "1.0.0",
+  "description": "App-Server",
+  "repository": "",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "starter": "npm run serve",
+    "start": "nodemon index.js",
+    "start:appf7": "CLIENT=app-f7 pm2 start index.js --name app-f7 --watch",
+    "serve": "nodemon --exec http-server ./www/ -o -c 1 -a 172.16.0.231 -p 3320",
+    "dev": "cross-env NODE_ENV=development vite",
+    "build": "cross-env NODE_ENV=production vite build && npx workbox generateSW workbox-config.js",
+    "postinstall": "cpy --flat ./node_modules/framework7-icons/fonts/*.* ./src/fonts/ && cpy --flat ./node_modules/material-icons/iconfont/*.* ./src/fonts/"
+  },
+  "browserslist": [
+    "IOS >= 15",
+    "Safari >= 15",
+    "last 5 Chrome versions",
+    "last 5 Firefox versions"
+  ],
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dom7": "^4.0.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "framework7": "^8.3.1",
+    "framework7-icons": "^5.0.5",
+    "material-icons": "^1.13.12",
+    "morgan": "^1.10.0",
+    "skeleton-elements": "^4.0.1",
+    "swiper": "^11.0.6"
+  },
+  "devDependencies": {
+    "cpy-cli": "^5.0.0",
+    "cross-env": "^7.0.3",
+    "postcss-preset-env": "^9.4.0",
+    "rollup-plugin-framework7": "^1.2.1",
+    "vite": "^5.1.4",
+    "workbox-cli": "^7.0.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "cwd": "/var/www/html/bruno-test/app-server",
+  "type": [
+    "pwa"
+  ],
+  "name": "App-Server",
+  "framework": "core",
+  "template": "single-view",
+  "bundler": "vite",
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkMode": false,
+    "iconFonts": true
+  },
+  "customBuild": false
+}
