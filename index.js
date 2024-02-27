@@ -1,12 +1,20 @@
 import * as APP_CONFIG from "./app.js"
 import cors from "cors";
 
+import { PORT } from "./src/config.js";
+
+import { GustavoService } from "./src/services/gustavo.service.js";
+ 
+const gustavoService = new GustavoService();
+
+// gustavoService.getUsuario(6300)
+gustavoService.getUsuarios(23)
+
 const allowedOrigins = [
     "http://172.16.0.231",
 ];
 
 const app = APP_CONFIG.default.app;
-const PORT = APP_CONFIG.default.PORT;
 
 const CORS = {
     origin: allowedOrigins,
