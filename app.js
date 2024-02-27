@@ -1,13 +1,11 @@
+import * as path from "path";
+import { PORT } from "./src/config.js";
+import { fileURLToPath } from 'url';
 import express from "express";
 import morgan from "morgan";
 import { siblings } from "dom7";
-import * as path from "path";
-import { fileURLToPath } from 'url';
-import { PORT } from "./src/config.js";
-
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
 
 
 // Crear app con express y utilizar morgan para ver las peticiones
