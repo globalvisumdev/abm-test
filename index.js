@@ -1,14 +1,18 @@
 import * as APP_CONFIG from "./app.js"
 import cors from "cors";
-
 import { PORT } from "./src/config.js";
-
 import { GustavoService } from "./src/services/gustavo.service.js";
+
+// importaciones para el OAuth 
+import dotenv from "dotenv"
+import express from "express";
+// expressApp.use("/auth", authRouter)
+
  
-const gustavoService = new GustavoService();
+// const gustavoService = new GustavoService();
 
 // gustavoService.getUsuario(6300)
-gustavoService.getUsuarios(23)
+// gustavoService.getUsuarios(23)
 
 const allowedOrigins = [
     "http://172.16.0.231",
