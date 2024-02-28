@@ -19,5 +19,3 @@ export const DB_HOST= process.env.DB_HOST;
 export const DB_DATABASE= process.env.DB_DATABASE;
 export const PORT= process.env.PORT;
 
-// Esta línea exporta un objeto vacío para que los otros exports estén disponibles cuando se importe este archivo.
-export default {};

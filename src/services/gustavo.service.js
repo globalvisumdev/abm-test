@@ -1,6 +1,6 @@
-import { DB_GUSTAVO_TEST } from "../db/db.js";
+import { pool } from "../db/db.js";
 
-const POOL_GUSTAVO = await DB_GUSTAVO_TEST;
+const POOL_GUSTAVO = pool;
 
 export class GustavoService {
   constructor() {}
