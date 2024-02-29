@@ -35,13 +35,13 @@ export const sessionStart = async (req, res) => {
 export const sessionFinish = async (req, res) => {
   try {
     if (req.session.usuario){
-      req.session.usuario =  
+      req.session.usuario = false
       req.session.activa = false
       res.json(req.session);
 
     } else {
       req.session.activa = false
-      req.session.info = "no hay usuario logueado"
+      req.session.body = "no sigue logueado"
       res.json(req.session);
 
     }
