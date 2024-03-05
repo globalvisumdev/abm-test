@@ -19,7 +19,7 @@ import App from '../app.f7';
 
 
 var app = new Framework7({
-  name: 'App-Server', // App name
+  name: 'My App', // App name
   theme: 'auto', // Automatic theme detection
 
 
@@ -35,3 +35,12 @@ var app = new Framework7({
     path: '/service-worker.js',
   } : {},
 });
+
+setTimeout(() => {
+  var mainView = app.views.create('.view-main', {
+    browserHistory: true,
+    preloadPreviousPage: false
+  });
+}, 500);
+
+window.app = app;

@@ -1,11 +1,11 @@
 {
-  "cwd": "/var/www/html/bruno-test/app-server",
+  "cwd": "/var/www/html/bruno-test/app-capas/front",
   "type": [
     "pwa"
   ],
-  "name": "App-Server",
+  "name": "My App",
   "framework": "core",
-  "template": "single-view",
+  "template": "tabs",
   "bundler": "vite",
   "cssPreProcessor": false,
   "theming": {

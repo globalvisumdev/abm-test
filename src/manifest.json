@@ -1,7 +1,7 @@
 {
-  "name": "App-Server",
-  "short_name": "App-Server",
-  "description": "App-Server",
+  "name": "My App",
+  "short_name": "My App",
+  "description": "My App",
   "lang": "en-US",
   "start_url": "/",
   "display": "standalone",

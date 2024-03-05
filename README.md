@@ -1,4 +1,4 @@
-# App-Server
+# My App
 
 ## Framework7 CLI Options
 
@@ -6,13 +6,13 @@ Framework7 app created with following options:
 
 ```
 {
-  "cwd": "/var/www/html/bruno-test/app-server",
+  "cwd": "/var/www/html/bruno-test/app-capas/front",
   "type": [
     "pwa"
   ],
-  "name": "App-Server",
+  "name": "My App",
   "framework": "core",
-  "template": "single-view",
+  "template": "tabs",
   "bundler": "vite",
   "cssPreProcessor": false,
   "theming": {
